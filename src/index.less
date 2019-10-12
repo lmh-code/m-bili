@@ -1,0 +1,213 @@
+@charset "UTF-8";
+@import "./utils/style/base.less";
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+body, button, input, select, textarea { font: 14px "microsoft yahei" }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+small{ font-size: 14px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "microsoft yahei";
+  list-style: none;
+  box-sizing: border-box;
+}
+body,html,#root {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  monospace;
+}
+img {
+  border: 0;
+  outline: none;
+}
+a {
+  text-decoration: none;
+  border:none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color:transparent;
+  outline:none;
+}
+
+
+.App {
+  text-align: left;
+  width: 100%;
+  height: 100%;
+}
+.ant-layout {
+  height: 100%;
+}
+.ant-layout-content {
+  background: @color-f5;
+  overflow-y: auto;
+  position: relative;
+}
+.ant-modal-body {
+  padding: 20px 24px !important;
+}
+
+.dialog-wraper .ant-form-item {
+  margin-bottom: 12px !important;
+}
+.main-container {
+  .pt(0);
+  .pr(20px);
+  .pb(20px);
+  .pl(20px);
+  box-sizing: border-box;
+  background: @color-f5;
+  border-radius: 5px;
+  position: relative;
+}
+.page-loading {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.operation-wraper, .content-wraper {
+  .p();
+  border-radius: 5px;
+  background-color: @color-fff;
+}
+
+.search-wraper {
+  overflow: hidden;
+  .pt();
+  .pr();
+  .pb(6px);
+  .pl();
+  border-radius: 5px;
+  background-color: @color-fff;
+  .ant-form-item {
+    display: inline-block !important;
+    margin-bottom: 0 !important;
+    margin-right: 8px;
+    .ant-form-item-label {
+      padding: 0 0 4px !important;
+      line-height: normal;
+    }
+  }
+}
+.ant-input[disabled], .ant-select-disabled .ant-select-selection {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+.ant-layout-sider {
+  width: 220px !important;
+  flex: 0 0 220px !important;
+  max-width: 220px !important;
+  min-width: 220px !important;
+}
+.ant-layout-sider-collapsed {
+  width: 80px !important;
+  flex: 0 0 80px !important;
+  max-width: 80px !important;
+  min-width: 80px !important;
+}
+.s-slip {
+  border: 1px solid @color-f5;
+}
+.content-wraper {
+  .mt();
+}
+.search-input {
+  min-width: 0 !important;
+  width: 170px !important;
+}
+.search-input-short {
+  min-width: 0 !important;
+  width: 140px !important;
+}
+.search-date-picker {
+  min-width: 0 !important;
+  width: 180px !important;
+}
+.form-item-add {
+  min-width: 0 !important;
+  width: 320px !important;
+}
+.sp-handel-w {
+  .pl(18px);
+  .pb();
+  border-bottom: 1px solid @color-ec;
+}
+// .fixed-right {
+//   float: right;
+// }
+.btn-wrap .ant-btn {
+  margin-left: 10px;
+}
+
+
+.form-item-label {
+  display: inline-block;
+  width: 180px !important;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.85);
+  .pr();
+}
+
+.from-item-required:before {
+  content: "*";
+  .pr(4px);
+  color: @err-color;
+}
+
+.nm {
+  margin: 0;
+}
+.no-mt {
+  margin-top: 0 !important;
+}
+.no-mb {
+  margin-bottom: 0 !important;
+}
+.mt20 {
+  .mt(20px);
+}
+.ml10 {
+  .ml();
+}
+.ml20 {
+  .ml(20px);
+}
+
+.ant-btn-link {
+  padding: 0 !important;
+  padding-right: 10px !important;
+}
+
+.ant-notification-notice-description {
+  max-height: 200px !important;
+  overflow-y: auto !important;
+  word-break: break-all;
+}
+.ant-tabs-bar {
+  margin: 0 0 6px 0;
+}
+
+.footer-wrap {
+  margin-top: 10px;
+}

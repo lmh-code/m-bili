@@ -1,0 +1,87 @@
+@import url("../../utils/style/base.less");
+.login-wraper {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/imgs/login_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  position: relative;
+  .login-form-wrap {
+    background-color: @color-fff;
+    border-radius: 8px;
+    position: relative;
+    .p(40px);
+    .mt(-150px);
+    .sys-tip-txt {
+      width: 100%;
+      text-align: center;
+      .fs(20px);
+      .mb(30px);
+      color: @color-666;
+    }
+    .form-title-line {
+      .mt();
+      .mb();
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      .form-title-line-left, .form-title-line-right {
+        width: 80px;
+        border-top: 1px dotted @color-ccc;
+      }
+      .form-title-line-center {
+        .pl();
+        .pr();
+      }
+      .form-title-line-center:hover {
+        color: @main-color;
+      }
+    }
+    .login-form {
+      min-width: 340px;
+      max-width: 440px;
+      .login-form-button {
+        width: 100%;
+        margin-top: 20px;
+      }
+      .login-err-txt-tip {
+        text-align: center;
+        color: @err-color;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        width: 100%;
+      }
+      .ant-form-item {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .login-form-wrap:hover {
+    -webkit-transform: translate3d(0,-2px,0);
+    transform: translate3d(0,-2px,0);
+    border-top: 2px solid @main-color;
+    -webkit-box-shadow: 0 2px 15px @color-eee;
+    box-shadow: 0 2px 15px @color-eee;
+    background-color: @color-fff;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  .copy-p {
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+  }
+}
