@@ -10,8 +10,7 @@ class Home extends Component {
   render() {
     return (
       <div className="home-wraper">
-        <img src="/imgs/welcome.png" alt=""/>
-        <div className="w-tip-txt">欢迎使用本来鲜-供应商系统</div>
+        发的撒打发斯蒂芬
       </div>
     );
   }

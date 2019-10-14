@@ -6,10 +6,8 @@ import router from '../../router';
 import PrivateRoute from '../../projectTools/PrivateRoute';
 
 import MyHeader from '../Common/Header';
-import Breadcrumb from '../Common/Breadcrumb';
-import Menus from "../Common/Menus";
 
-const {Sider, Content} = Layout;
+const {Content} = Layout;
 class BlLayout extends Component {
   constructor(props) {
     super(props)

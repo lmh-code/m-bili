@@ -11,7 +11,7 @@ export default [
           path: ''
         }
       ]
-      let title = '本来鲜-供应商系统'
+      let title = 'React哔哩哔哩'
       return <Bundle {...props} load={() => import('../components/Home')} breadcrumbList={breadcrumbList} title={title}/>;
     }
   },
@@ -29,7 +29,7 @@ export default [
           path: ''
         }
       ]
-      let title = '未找到页面'
+      let title = 'React哔哩哔哩-未找到页面'
       return <Bundle {...props} load={() => import('../components/Common/NotFound')} breadcrumbList={breadcrumbList} title={title}/>;
     }
   },
@@ -47,7 +47,7 @@ export default [
           path: ''
         }
       ]
-      let title = '无访问权限'
+      let title = 'React哔哩哔哩-无访问权限'
       return <Bundle {...props} load={() => import('../components/Common/NoOption')} breadcrumbList={breadcrumbList} title={title}/>;
     }
   }

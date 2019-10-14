@@ -20,7 +20,6 @@ class App extends Component {
     return (
       <div className="App">
         <ConfigProvider locale={zh_CN}>
-          {this.props.count}
           <BlLayout/>
         </ConfigProvider >
       </div>

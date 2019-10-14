@@ -1,98 +1,11 @@
 @import "../../../utils/style/base.less";
 .header-wrap {
   width: 100%;
-  height: 50px;
-  background-color: @main-color;
-  position: relative;
-
-  .menu-control-btn-wrap {
-    height: 50px;
-    .lh(50px);
-    .fs(20px);
-    color: @color-fff;
-    cursor: pointer;
-    .pl(20px);
-    .pr(20px);
+  height: auto;
+  background-color: @color-fff;
+  .header-content {
+    box-sizing: border-box;
+    padding: 0.08rem 0.14rem;
+    position: relative;
   }
-
-  .city-change-wraper {
-    .mt(9px);
-    .mb(9px);
-    .mr(0);
-    .ml();
-    float: left;
-  }
-
-  /*用户信息*/
-  .per-mesg {
-    .pl(20px);
-    .pr(20px);
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 999;
-    .mt(-2px);
-
-    .username {
-      position: relative;
-      .lh(48px);
-      span {
-        color: @color-fff;
-      }
-      span:nth-child(1) {
-        .fs(20px);
-        position: relative;
-        top: 2px;
-        right: 4px;
-      }
-      span:nth-child(2) {
-        .fs(16px);
-        vertical-align: middle;
-        width: 82px;
-        display: inline-block;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        -o-text-overflow: ellipsis;
-        white-space:nowrap;
-      }
-      span:nth-child(3) {
-        .fs(14px);
-        position: relative;
-        top: 2px;
-      }
-    }
-
-    .handel-wrap {
-      width: 100%;
-      height: auto;
-      background-color: @main-color;
-      .br(5px);
-      position: relative;
-      top: 8px;
-      .pl(8px);
-      .pr(8px);
-
-      .slow-icon {
-        position: absolute;
-        top: -14px;
-        left: 6px;
-        color: @main-color;
-      }
-
-      p {
-        .lh(38px);
-        border-bottom: 1px solid @color-eee;
-        .fs(14px);
-        color: @color-fff;
-        text-align: center;
-        .mb(0);
-      }
-
-      p:nth-child(3) {
-        border-bottom: 0;
-      }
-    }
-  }
-
 }
