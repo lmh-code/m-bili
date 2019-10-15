@@ -6,7 +6,6 @@
 import React, {Component} from 'react';
 import store from '../store'
 import {addBreadcrumb} from '../store/actions/breadcrumb'
-import { Spin, Icon } from 'antd';
 import Storage from '../utils/localStorage';
 import config from '../utils/config';
 
@@ -39,12 +38,9 @@ class Bundle extends Component {
 
   render() {
     /**首屏加载 */
-    const antIcon = <Icon type="loading" style={{ fontSize: 24 }} spin />
     const {load, ...props} = this.props;
     const Component = this.state.Component;
-    return Component ? <Component {...props}/> : <div className="page-loading">
-      <Spin indicator={antIcon} />
-    </div>;
+    return Component ? <Component {...props}/> : null
   }
 }
 
